@@ -9,7 +9,7 @@ api.orderItems = function(req) {
 };
 
 // GET
-api.orderitem = function(req) {
+api.orderItem = function(req) {
   return req.store.recordItemById('OrderItem', req.params.id);
 };
 
@@ -32,7 +32,7 @@ router.get('/orderItems', api.orderItems);
 router.post('/orderItems', api.addOrderItem);
 
 router.route('/orderItems/:id')
-  .get(api.orderitem)
+  .get(api.orderItem)
   .put(api.editOrderItem)
   .delete(api.deleteOrderItem);
 

@@ -14,10 +14,10 @@ var OrderItemTransformer = Mystique.Transformer.extend({
 
   mapIn(req) {
     return {
-      price: req.body.orderItem.price,
-      quantity: req.body.orderItem.quantity,
-      menuItem: req.body.orderItem.menuItem,
-      order: req.body.orderItem.order,
+      price: req.getJson('orderItem.price'),
+      quantity: req.getJson('orderItem.quantity'),
+      menuItem: req.getJson('orderItem.menuItem'),
+      order: req.getJson('orderItem.order'),
     };
   },
 });

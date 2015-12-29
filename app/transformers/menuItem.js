@@ -14,10 +14,10 @@ var MenuItemTransformer = Mystique.Transformer.extend({
 
   mapIn(req) {
     return {
-      name: req.body.menuItem.name,
-      description: req.body.menuItem.description,
-      price: req.body.menuItem.price,
-      category: req.body.menuItem.category,
+      name: req.getJson('menuItem.name'),
+      description: req.getJson('menuItem.description'),
+      price: req.getJson('menuItem.price'),
+      category: req.getJson('menuItem.category'),
     };
   },
 });

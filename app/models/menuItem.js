@@ -12,6 +12,8 @@ var fields = {
   category: { type: String },
 };
 
-var menuitemSchema = new Schema(fields);
+var MenuItemSchema = new Schema(fields);
 
-module.exports = mongoose.model('MenuItem', menuitemSchema);
+
+
+module.exports = mongoose.model('MenuItem', MenuItemSchema);

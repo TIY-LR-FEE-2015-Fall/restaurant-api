@@ -9,7 +9,7 @@ api.menuItems = function(req) {
 };
 
 // GET
-api.menuitem = function(req) {
+api.menuItem = function(req) {
   return req.store.recordItemById('MenuItem', req.params.id);
 };
 
@@ -32,7 +32,7 @@ router.get('/menuItems', api.menuItems);
 router.post('/menuItems', api.addMenuItem);
 
 router.route('/menuItems/:id')
-  .get(api.menuitem)
+  .get(api.menuItem)
   .put(api.editMenuItem)
   .delete(api.deleteMenuItem);
 

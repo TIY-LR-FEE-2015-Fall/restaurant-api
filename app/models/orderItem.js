@@ -14,7 +14,6 @@ var fields = {
 
 var OrderItemSchema = new Schema(fields);
 
-// OrderItemSchema.plugin(relationship, {relationshipPathName: 'menuItem'});
 OrderItemSchema.plugin(relationship, {relationshipPathName: 'order'});
 
 module.exports = mongoose.model('OrderItem', OrderItemSchema);

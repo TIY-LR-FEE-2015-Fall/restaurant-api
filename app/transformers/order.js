@@ -11,7 +11,7 @@ var OrderTransformer = Mystique.Transformer.extend({
 
   mapIn(req) {
     return {
-      items: req.body.order.items,
+      items: req.getJson('order.items'),
     };
   },
 });

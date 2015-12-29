@@ -9,6 +9,8 @@ var fields = {
   items: [{ type: ObjectId, ref: 'OrderItem' }],
 };
 
-var orderSchema = new Schema(fields);
+var OrderSchema = new Schema(fields);
 
-module.exports = mongoose.model('Order', orderSchema);
+
+
+module.exports = mongoose.model('Order', OrderSchema);
