@@ -1,0 +1,6 @@
+{
+  "name": "Restaurant API",
+  "description": "A Restful API for menu items, order items, and orders.",
+  "repository": "https://github.com/tiy-lr-fee-2015-fall/restaurant-api",
+  "addons": ["mongolab"]
+}
