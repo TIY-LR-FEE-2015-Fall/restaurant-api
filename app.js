@@ -14,6 +14,7 @@ require('./app/models');
 require('./app/transformers');
 app.use(require('./app/middleware/xmen'));
 app.use(require('./app/middleware/origin-signing'));
+app.use(require('cors')());
 
 app.oauth = require('./app/oauth');
 
